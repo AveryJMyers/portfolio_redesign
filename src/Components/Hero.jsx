@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css'
+import dropdown from '../Photos/icons/whiteDropdown.png'
 
 
 export default function Hero() {
@@ -12,7 +13,7 @@ export default function Hero() {
         const interval = setInterval(() => {
             currentIdx = (currentIdx + 1) % words.length;
             setCurrentWord(words[currentIdx]);
-        }, 3000); 
+        }, 1400); 
 
         return () => clearInterval(interval);
     }, []);
@@ -25,6 +26,7 @@ export default function Hero() {
                 <div className='headingContainer'>
                     <h1 className='heroHeadings mainLine'>I AM AVERY MYERS, <br></br>A FULL-STACK DEVELOPER</h1>
                     <h3 className='heroHeadings tagLine'>LET'S <span className='currentWord'>{currentWord}</span> TOGETHER.</h3>
+                    <img src={dropdown} className='dropdown'></img>
                 </div>
             </section>
         </>
