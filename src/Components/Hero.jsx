@@ -13,7 +13,7 @@ export default function Hero() {
         const interval = setInterval(() => {
             currentIdx = (currentIdx + 1) % words.length;
             setCurrentWord(words[currentIdx]);
-        }, 1400); 
+        }, 1800); 
 
         return () => clearInterval(interval);
     }, []);

@@ -8,7 +8,7 @@ export default function MyWork() {
 
     const projects = [
         {
-          name: 'Wedloc',
+          name: 'WEDLOC',
           description: 'Wedloc is a photo/video sharing app for wedding guests. Guests can upload photos/videos, add comments, like, and even livechat.',
           techsUsed: ['React', 'Node', 'MongoDB', 'GraphQL', 'Cloudinary', 'Socket.io', 'TailwindCSS', '+ more'],
           techUsed: [ 'nodeIcon.png', 'graphqlIcon.png', 'cloudinaryIcon.png', 'tailwindIcon.png'],
@@ -75,11 +75,13 @@ export default function MyWork() {
             <section className="projects-grid">
                 {projects.map((project, index) => (
                     <div key={index} className="project-item">
-                        <img src={project.img} alt={project.name} className="projectImg"></img>
+                        <div className="project-overlay">
+                            <img src={project.img} alt={project.name} className="projectImg" />
+                            <h1 className="project-text">{project.name}</h1>
+                        </div>
                     </div>
                 ))}
-            </section>
-
+                </section>
         </section>
     </>
     
