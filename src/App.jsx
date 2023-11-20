@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // pages 
 import Landing from './Pages/Landing'
+import SingleProject from './Pages/SingleProject'
 
 
 
@@ -10,16 +11,15 @@ import Landing from './Pages/Landing'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Router>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/project/:name" element={<SingleProject/>} />
+          </Routes>
       </Router>
-      
     </>
   )
 }

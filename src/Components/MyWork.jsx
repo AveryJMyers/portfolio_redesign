@@ -2,9 +2,12 @@ import React from "react";
 
 import Wedloc from '../Photos/wedloc.png'
 import TaskTitan from '../Photos/taskTitan2.png'
+import { useNavigate } from 'react-router-dom';
 
 
 export default function MyWork() {
+    const navigate = useNavigate();
+
 
     const projects = [
         {
@@ -74,14 +77,17 @@ export default function MyWork() {
             </h2>
             <section className="projects-grid">
                 {projects.map((project, index) => (
-                    <div key={index} className="project-item">
+                    <div key={index} 
+                    className="project-item"
+                    onClick={() => navigate(`/project/${project.name}`)}
+                    >
                         <div className="project-overlay">
                             <img src={project.img} alt={project.name} className="projectImg" />
                             <h1 className="project-text">{project.name}</h1>
                         </div>
                     </div>
                 ))}
-                </section>
+            </section>
         </section>
     </>
     
