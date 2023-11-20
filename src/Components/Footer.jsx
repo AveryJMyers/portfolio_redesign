@@ -5,7 +5,7 @@ export default function Footer() {
         return (
             <>
                 <section className='footer'>
-                    <p className='footerText'></p>
+                    <p className='footerText'>I am a footer</p>
                 </section>
             </>
         )
