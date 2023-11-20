@@ -18,6 +18,17 @@ body{
   background-color: var(--white);
 }
 
+h1{
+  font-size: 2.6rem;
+  font-weight: 600;
+  
+}
+
+h3{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 
 /* ALL HEADER CSS */
 
@@ -61,5 +72,52 @@ body{
 
 .nav a:hover{
   transform: scale(1.1);
+}
+
+/*  */
+
+/* HERO CSS */
+
+.hero{
+  background-color: var(--black);
+  display: flex;
+  background-color: var(--black);
+  align-items: center;
+  justify-content: center;
+}
+
+.headingContainer{
+  padding: 8%;
+
+}
+.heroHeadings{
+  width: 100%;
+  color: var(--white);
+}
+.currentWord{
+  color: var(--yellow);
+}
+.mainLine{
+  letter-spacing: 10px;
+  word-spacing: 20px;
+}
+.tagLine{
+  font-style: italic;
+  word-spacing: 6%;
+  letter-spacing: 5px;
+}
+
+
+
+
+
+
+/*  */
+/* Work Page */
+
+.workHeading{
+  color: var(--black);
+  text-align: center;
+  padding-top: 5%;
 }
 
