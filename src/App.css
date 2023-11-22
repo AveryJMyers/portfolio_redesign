@@ -9,7 +9,6 @@
   --black: #1d1d1d;
   --yellow: #eac96d;
   overflow-x: hidden;
-  
 }
 
 body{
@@ -20,17 +19,53 @@ body{
 
 }
 
+p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
 h1{
   font-size: 4rem;
   font-weight: 600;
   
 }
 
+h2{
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
 h3{
   font-size: 2rem;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
+h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+h5{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h6{
+  font-size: .85rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
 
 /* ALL HEADER CSS */
 
@@ -173,6 +208,125 @@ h3{
 }
 
 
+
+/* Single View CSS */
+
+.projectHeader{
+  display: flex;
+}
+
+.singleViewPhoto{
+  width: 48%;
+}
+
+.singleViewTitle{
+  justify-content: start;
+  align-content: flex-start;
+  align-self: center;
+  
+}
+
+.svProject {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split each project into two equal columns */
+  gap: 3%;
+  margin: 0 8% 0 8%;
+  margin-top: 2%;
+}
+
+.svPhoto {
+  width: 100%; /* Make sure the photo fills its column */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.svProjectInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.svProjectTitle {
+padding-top: 0%;
+font-weight: 600;
+}
+
+.svProjectInfo{
+  padding-top: 0%;
+}
+
+.svDescription{
+  padding-top: 3%;
+  margin: 0%;
+}
+
+.svType{
+  margin: 0%;
+  padding-top: 1%;
+}
+
+.svButtonGroup {
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Adjusts the spacing between buttons */
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.svButtonGroup button {
+  flex-grow: 1; 
+  margin-right: 10px; 
+  margin-top: 20%;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 10px;
+  padding: 10% 20% 10% 20%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--black);
+  transition: 0.3s;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.svButtonGroup button:hover {
+  transform: scale(1.1);
+
+}
+
+/* Remove margin from the last button */
+.svButtonGroup button:last-child {
+  margin-right: 0;
+
+}
+
+.collapsible{
+  padding-top: 1%;
+}
+
+.collapsible-title{
+  width: 84%;
+  background-color: var(--yellow);
+  border: none;
+  margin: 0 8% 0 8%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1% 2% 1% 2%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.collapsible-title:hover{
+  transform: scale(1.1);
+}
+
+
+
+.collapsible-content{
+  justify-content: center;
+  text-align: center;
+}
 
 
 /* footer */
